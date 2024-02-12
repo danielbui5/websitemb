@@ -21,13 +21,14 @@
 /*  */
 .navbar{
     width: 100%;
-    margin-left: 0px;
-    padding: 0;
+    margin: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
+    background-color: grey;
     border: 5px solid;
+    z-index: 1;
 }
 /*  */
 .navbar ul li{
@@ -41,7 +42,6 @@
     text-decoration: none;
     color: #fff;
     text-transform: capitalize;
-    /* border: 5px solid; */
 }
 
 /*  */
@@ -62,9 +62,8 @@
 
 .content{
     width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    position: relative;
+    bottom: 80%;
     text-align: center;
     color: #fff;
 }
@@ -83,9 +82,8 @@
 .about{
     width: 100%;
     position: absolute;
-    bottom: -200%;
+    bottom: -100%;
     text-align: center;
-    /* padding-left: 50px; */
     color: black;
     border: 5px solid;
 }
@@ -97,6 +95,28 @@
 /*  */
 .about p{
     margin-bottom: 40px;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.contact{
+    width: 100%;
+    position: absolute;
+    bottom: -225%;
+    text-align: right;
+    color: black;
+    border: 5px solid;
+}
+/*  */
+.contact h1{
+    font-size: 20px;
+    margin: 20px;
+    margin-right: 50px;
+}
+/*  */
+.contact p{
+    margin-bottom: 30px;
+    margin-right: 50px;
     font-weight: 100;
     line-height: 25px;
 }
