@@ -16,8 +16,11 @@
 }
 /*  */
 .logo{
-    width: 100px;
+    width: 150px;
     cursor: pointer;
+    margin-left: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 /*  */
 .navbar{
@@ -27,8 +30,13 @@
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    background-color: grey;
+    background-color: #fff;
+    transition: all 0.5s;
     z-index: 1;
+}
+
+.navbar-scrolled{
+    background-color: #d9b99b;
 }
 /*  */
 .navbar ul li{
@@ -39,7 +47,7 @@
 /*  */
 .navbar ul li a{
     text-decoration: none;
-    color: #fff;
+    color: black;
     text-transform: capitalize;
     font-weight: bold;
     transition: 0.4s ease-in-out;
@@ -54,21 +62,27 @@
 .content{
     width: 100%;
     position: relative;
-    bottom: 80%;
+    top: 13%;
     text-align: center;
-    color: #fff;
-    border: 5px solid;
+    color: #d9b99b;
+    background-color: #d9b99b;
+    
+    border-top: 35px solid;
+    border-bottom: 35px solid;
 }
 /*  */
 .content h1{
     font-size: 70px;
-    margin-top: 80px;
+    margin-top: 55px;
+    color: #000;
 }
 /*  */
 .content p{
     margin: 20px auto;
+    margin-bottom: 55px;
     font-weight: 100;
     line-height: 25px;
+    color: #000;
 }
 
 .row {
@@ -90,6 +104,7 @@
 
 /*  */
 .about-col img{
+    margin-top: 50px;
     width: 80%;
     padding-left: 50px;
 }
@@ -100,27 +115,41 @@
 
 .about-col p{
     padding: 15px 0 25px;
-
 }
 
 /*  */
 .services{
-    width: 100%;
-    position: relative;
-    text-align: center;
-    color: black;
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    flex: 50%;
 }
 /*  */
-.services h1{
+.services-col h1{
     font-size: 20px;
     margin: 20px;
 
 }
 /*  */
-.services p{
-    margin-bottom: 30px;
-    font-weight: 100;
-    line-height: 25px;
+.services-col{
+    float: left;
+    width: 33.33%;
+}
+/*  */
+.services-col img{
+    width: 80%;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+/*  */
+.services-col h1{
+    font-size: 20px;
+    margin: 20px;
+}
+/*  */
+.services-col p{
+    padding-left: 20px;
 }
 /*  */
 .contact{
@@ -142,4 +171,10 @@
     margin-bottom: 30px;
     font-weight: 100;
     line-height: 25px;
+}
+
+hr{
+    width: 80%;
+    color: #d9b99b;
+    margin: auto;
 }
